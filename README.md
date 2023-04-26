@@ -12,3 +12,8 @@ incoming data files to ensure they have proper schema
 ```
 
 ![](https://github.com/Oguzozcn/Azure-Movie-Recommendation-System/blob/main/systemdiagram.png)
+
+#### Citation 
+```
+F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. <https://doi.org/10.1145/2827872>
+```
