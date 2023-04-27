@@ -22,15 +22,17 @@ This project involves creating a movie recommendation system using Azure service
 ## Full Guidance
 
 
-1. Resource Group: Inside Azure services create a resource group to hold all the resources for your project. This is like a container for all the resources you'll create in Azure. You can give it a name and choose a location that's nearest to your company. Note that resource group = resource container and this is the place everything going to be held for Azure Movie Recommendation System.
+#### 1. Resource Group: 
+Inside Azure services create a resource group to hold all the resources for your project. This is like a container for all the resources you'll create in Azure. You can give it a name and choose a location that's nearest to your company. Note that resource group = resource container and this is the place everything going to be held for Azure Movie Recommendation System.
 
-2. Storage Account: Create a storage account to store your movie data files. Make sure you link this storage account to your resource group. There are different types of replication available in Azure, including geo-redundant storage and locally-redundant storage. Geo-redundant storage means your data is replicated in a different geography, while locally-redundant storage means your data is replicated within the same region. Enable hierarchical namespace, you're allowing for the creation of directories and subdirectories in your storage account, similar to how folders are organized on a local computer. This can make it easier to manage and access your files. You can also create containers within your storage account to group your files together, and use a schema to ensure that your files have the proper format and structure.
+#### 2. Storage Account: 
+Create a storage account to store your movie data files. Make sure you link this storage account to your resource group. There are different types of replication available in Azure, including geo-redundant storage and locally-redundant storage. Geo-redundant storage means your data is replicated in a different geography, while locally-redundant storage means your data is replicated within the same region. Enable hierarchical namespace, you're allowing for the creation of directories and subdirectories in your storage account, similar to how folders are organized on a local computer. This can make it easier to manage and access your files. You can also create containers within your storage account to group your files together, and use a schema to ensure that your files have the proper format and structure.
 
 
 ![](https://github.com/Oguzozcn/Azure-Movie-Recommendation-System/blob/main/Storage%20account.png)
 
 
-3. Azure Databricks and Mounting (Setup and Key Vault): 
+#### 3. Azure Databricks and Mounting (Setup and Key Vault): 
 
 a) Create an Azure Databricks by connecting it to your resource group. Choose the standard pricing tier, which will create a workspace. Sign in to the new window that pops out and create a new notebook with the language as Python. Remember that running notebooks means running clusters and will result in charges.
 
@@ -46,7 +48,7 @@ f) Go to Azure Key Vault and create a new key vault. Inside the vault, store the
 
 g) To use the app registration, you need three things: client secret, application (client) ID, and directory (tenant) ID. Create these three in Key Vault. Remember that even the owner cannot see the value after. Use step 1 to fill it.
 
-4. Azure Databricks and Mounting (Mounting Notebook):
+#### 4. Azure Databricks and Mounting (Mounting Notebook):
 
 a) Manually create scope by go to https://<databricks-instance>#secrets/createScope. This URL is case sensitive; scope in createScope must be uppercase. More information from databricks website [here](https://learn.microsoft.com/en-us/azure/databricks/security/secrets/secret-scopes).
  
@@ -54,7 +56,7 @@ b) From azure key vault >> properties copy Vault URL and Resource ID and save it
  
 c) List the files to verify.
   
-5. Azure Databricks and Mounting (Movie_Lens_small Notebook):
+#### 5. Azure Databricks and Mounting (Movie_Lens_small Notebook):
 
 
 
