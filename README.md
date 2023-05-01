@@ -2,6 +2,7 @@
 
 ### Why I am doing this?: 
 - I am studying azure services due preparation of DP-203 (Azure Data Engineering Exam) and also investigate how cloud services builts systems from scratch. I am taking notes also for future purposes and also people who have less experience can see and understand how processes works in a simple step by step guide with schema that makes them understand bigger picture.
+- Secondly I will perpare a same project with no azure services just to practice spark more also (locally). File will be available in Local dir.
 
 This project involves creating a movie recommendation system using Azure services, which includes the following steps:
 
