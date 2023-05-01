@@ -1,5 +1,8 @@
 # Azure Movie Recommendation System
 
+### Why I am doing this?: 
+- I am studying azure services due preparation of DP-203 (Azure Data Engineering Exam) and also investigate how cloud services builts systems from scratch. I am taking notes also for future purposes and also people who have less experience can see and understand how processes works in a simple step by step guide with schema that makes them understand bigger picture.
+
 This project involves creating a movie recommendation system using Azure services, which includes the following steps:
 
 
@@ -88,6 +91,10 @@ Summary of it is to find movie recommendations, we need to analyze the ratings d
  
  - Select web and drag down two of it next to if condition. Name them success email and fail email. Inside setting URL set by azure logic apps (we are going to use it to schedule and send emails)
  
+- Create a logic app, on resource group and publish on workflow. Then create a trigger, select schedule.
+ 
+- Run the pipeline and it will email.
+ 
  
  
 
@@ -106,6 +113,8 @@ Summary of it is to find movie recommendations, we need to analyze the ratings d
 
 
 #### Citation 
+
+ Note: I changed all .csv files since they still didnt email me free usage licence. So now movie names shown as follow, Movie_1, Movie_2.
 ```
 F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. <https://doi.org/10.1145/2827872>
 ```
